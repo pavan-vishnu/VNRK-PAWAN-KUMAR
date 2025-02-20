@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Buy Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rating,
+        .price {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .features,
+        .reviews,
+        .purchase-options,
+        .delivery-options,
+        .specifications,
+        .warranty-support {
+            margin: 20px 0;
+        }
+
+        .specifications table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specifications th,
+        .specifications td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 0;
+            background-color: #f0c14b;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #a88734;
+        }
+    </style>
+    <script>
+        function redirectToPayment() {
+            var paymentMethod = document.getElementById("payment-method").value;
+            if (paymentMethod === "cod") {
+                window.location.href = "link_to_cod_page.html";
+            } else if (paymentMethod === "upi") {
+                window.location.href = "link_to_upi_page.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="product">
+        <div class="product-title">Formal Suits</div>
+        <div class="brand">Brand: Raymond</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
+        <div class="price">Price: 5000</div>
+        <div class="features">
+            <h2>Product Description</h2>
+            <ul>
+                <li>Feature 1: Blazer</li>
+                <li>Feature 2: White Shirt</li>
+                <li>Feature 3: color pant</li>
+            </ul>
+        </div>
+        <div class="description">
+            <h2>Product Description</h2>
+            <p>Raymond suit for Britishers deligate meeting.</p>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <p><strong>User 1:</strong> 🌟🌟🌟🌟🌟<br>Review text from User 1</p>
+            <p><strong>User 2:</strong> 🌟🌟🌟🌟<br>Review text from User 2</p>
+        </div>
+        <div class="purchase-options">
+            <h2>Purchase Options</h2>
+
+        </div>
+        <div class="delivery-options">
+            <h2>Delivery Options</h2>
+            <ul>
+                <li>Standard Delivery: Estimated delivery in 4-5 days.</li>
+                <li>Express Delivery: Estimated delivery in 1-2 days.</li>
+            </ul>
+        </div>
+
+
+        <div class="payment">
+            <h2>Select Payment Method</h2>
+            <select id="payment-method">
+                <option value="">Select</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="upi">UPI</option>
+            </select>
+            <button onclick="redirectToPayment()">Proceed</button>
+        </div>
+    </div>
+</body>
+
+</html>
