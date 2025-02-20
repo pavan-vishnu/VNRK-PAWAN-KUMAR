@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazonClone-Dashboard</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #232f3e;
+            color: rgb(199, 212, 13);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            width: 50%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .cart {
+            background: orange;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.moneycontrol.com/static-mcnews/2023/06/Meesho-682x435.jpg') no-repeat center center/cover;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .buy-button {
+            background: #ff9900;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 100%;
+            color: rgb(20, 161, 142);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">Meesho online shopping</div>
+        <input type="text" class="search-bar" placeholder="Search for products...">
+        <div class="cart">Cart</div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        Welcome to Our meesho online shopping!
+    </div>
+
+    <!-- Products Section row1 -->
+    <div class="products">
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/navy-blue-men-s-blazer-business-wear-fashion-full-body_53876-108607.jpg"
+                alt="product 1">
+            <h3>Men suit</h3>
+            <p>$29.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://louisphilippe.abfrl.in/blog/wp-content/uploads/2024/02/Formal-Dress-Code-in-2024.jpg"
+                alt="product 2">
+            <h3>Suit from embassy</h3>
+            <p>$49.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://paaneriindia.com/cdn/shop/products/CS11151A.jpg" alt="product 3">
+            <h3>Manyavar</h3>
+            <p>$19.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30102993/2024/11/7/e7dc0559-871e-4ec1-851b-d8f8702385231730979261265-Mast--Harbour-Men-Blazers-991730979260871-1.jpg"
+                alt="product 4">
+            <h3>Confronted suits</h3>
+            <p>$39.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+    </div>
+    <!-- Products Section row2 -->
+    <div class="products">
+        <div class="product">
+            <img src="https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/fd4bc231158325921729516375590.jpg"
+                alt="product 1">
+            <h3>hero moto</h3>
+            <p>$29.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://ahoybikes.com/wp-content/uploads/2022/10/Buy-Bounce-Bike-Without-Gear-29T-Blue-Non-Gear-Cycle-for-Men-1.jpg"
+                alt="product 2">
+            <h3>Hercules</h3>
+            <p>$49.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://ahoybikes.com/wp-content/uploads/2022/10/Brash-Non-Gear-Cycle-24T-Buy-Grey-Non-Gear-Bike-for-Men.jpg"
+                alt="product 3">
+            <h3>E-rider</h3>
+            <p>$19.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/c2c432e9d0af6eff1730290491609.jpg"
+                alt="product 4">
+            <h3>Street Racer</h3>
+            <p>$39.99</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="https://img.freepik.com/free-psd/running-shoes-sneakers-transparent-background_84443-1608.jpg"
+                alt="product 5">
+            <h4>Sparx shoes</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://www.ajantashoes.com/pub/media/catalog/product/cache/0ee050c3ffc3555709b9bb6062f4d7e9/e/g/eg1001.jpg"
+                alt="product 5">
+            <h4>Ajanta shoes</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61-Xn9JlL7L._AC_UY1000_.jpg" alt="product 5">
+            <h4>Fila</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://sc04.alicdn.com/kf/H0e4d002b55af4613aa1b4c9c701ec45aw.jpg" alt="product 5">
+            <h4>sneakers</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?cs=srgb&dl=pexels-pixabay-280250.jpg&fm=jpg"
+                alt="product 6">
+            <h4>Brooklyn</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/486993228/photo/smart-watch.jpg?s=612x612&w=0&k=20&c=dVKA7YSTjnhzYAoYcxDwGEuV18QV-K-YuZCABnjt8pE="
+                alt="product 7">
+            <h4>Smart watch</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?cs=srgb&dl=pexels-joey-nguy-n-1056657-2113994.jpg&fm=jpg"
+                alt="product 8">
+            <h4>UK collections</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.meesho.com/images/products/206224382/vwmx3_512.jpg" alt="product 9">
+            <h4>fossil watch</h4>
+            <p>$45.54</p>
+            <button class="buy-button"><a href="buy.html">Buy me!</a></button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 meesho | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </div>
+</body>
+
+</html>
